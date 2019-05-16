@@ -1,4 +1,7 @@
 # Colorsys
+[![Build Status](https://travis-ci.com/cckuailong/Colorsys.jl.svg?branch=master)](https://travis-ci.com/cckuailong/Colorsys.jl)
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/cckuailong/Colorsys.jl?svg=true)](https://ci.appveyor.com/project/cckuailong/Colorsys-jl)
+[![Codecov](https://codecov.io/gh/cckuailong/Colorsys.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/cckuailong/Colorsys.jl)
 ## What is colorsys-go
 Colorsys is a julia package(or lib) for everyone to
 transform one color system to another. The transformation
@@ -79,7 +82,3 @@ h, l, s := Colorsys.hsv2hls(h, s, v)
 Any questions, welcome to email me at 346813862Hjj@gmail.com
 
 My Blog is lovebear.top
-
-[![Build Status](https://travis-ci.com/cckuailong/Colorsys.jl.svg?branch=master)](https://travis-ci.com/cckuailong/Colorsys.jl)
-[![Build Status](https://ci.appveyor.com/api/projects/status/github/cckuailong/Colorsys.jl?svg=true)](https://ci.appveyor.com/project/cckuailong/Colorsys-jl)
-[![Codecov](https://codecov.io/gh/cckuailong/Colorsys.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/cckuailong/Colorsys.jl)
