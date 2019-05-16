@@ -1,0 +1,10 @@
+name = "Colorsys"
+uuid = "40f836c2-45a2-5f9b-ad21-e4b52f5218c3"
+authors = ["cckuailong <346813862@qq.com>"]
+version = "0.1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
