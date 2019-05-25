@@ -1,6 +1,6 @@
-# Colorsys
+# Colorsys.jl
 [![Build Status](https://travis-ci.com/cckuailong/Colorsys.jl.svg?branch=master)](https://travis-ci.com/cckuailong/Colorsys.jl)
-## What is Colorsys
+## What is Colorsys.jl
 Colorsys.jl is a Julia package(or lib) for everyone to
 transform one color system to another. The transformation
 is among RGB, YIQ, HLS and HSV.
