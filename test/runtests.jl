@@ -1,4 +1,4 @@
-using .Colorsys
+using Colorsys
 using Test
 
 @testset "Colorsys.jl" begin
