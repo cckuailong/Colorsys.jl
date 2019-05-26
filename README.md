@@ -1,5 +1,6 @@
 # Colorsys.jl
 [![Build Status](https://travis-ci.com/cckuailong/Colorsys.jl.svg?branch=master)](https://travis-ci.com/cckuailong/Colorsys.jl)
+[![Coveralls](https://coveralls.io/repos/github/cckuailong/Colorsys.jl/badge.svg?branch=master)](https://coveralls.io/github/cckuailong/Colorsys.jl?branch=master)
 ## What is Colorsys.jl
 Colorsys.jl is a Julia package(or lib) for everyone to
 transform one color system to another. The transformation
@@ -30,51 +31,51 @@ Y, S, V, L : 0 ~ 1
 ### Examples
 1. RGB to YIQ
 ```
-y, i, q := Colorsys.rgb2yiq(r, g, b)
+y, i, q = Colorsys.rgb2yiq(r, g, b)
 ```
 2. YIQ to RGB
 ```
-r, g, b := Colorsys.yiq2rgb(y, i, q)
+r, g, b = Colorsys.yiq2rgb(y, i, q)
 ```
 3. RGB to HLS
 ```
-h, l, s := Colorsys.rgb2hls(r, g, b)
+h, l, s = Colorsys.rgb2hls(r, g, b)
 ```
 4. HLS to RGB
 ```
-r, g, b := Colorsys.hls2rgb(h, l, s)
+r, g, b = Colorsys.hls2rgb(h, l, s)
 ```
 5. RGB to HSV
 ```
-h, s, v := Colorsys.rgb2hsv(r, g, b)
+h, s, v = Colorsys.rgb2hsv(r, g, b)
 ```
 6. HSV to RGB
 ```
-r, g, b := Colorsys.hsv2rgb(h, s, v)
+r, g, b = Colorsys.hsv2rgb(h, s, v)
 ```
 7. Yiq to Hls
 ```
-h, l, s := Colorsys.yiq2hls(y, i, q)
+h, l, s = Colorsys.yiq2hls(y, i, q)
 ```
 8. YIQ to HSV
 ```
-h, s, v := Colorsys.yiq2hsv(y, i, q)
+h, s, v = Colorsys.yiq2hsv(y, i, q)
 ```
 9. HLS to YIQ
 ```
-y, i, q := Colorsys.hls2yiq(h, l, s)
+y, i, q = Colorsys.hls2yiq(h, l, s)
 ```
 10. HLS to HSV
 ```
-h, s, v := Colorsys.hls2hsv(h, l, s)
+h, s, v = Colorsys.hls2hsv(h, l, s)
 ```
 11. HSV to YIQ
 ```
-y, i, q := Colorsys.hsv2yiq(h, s, v)
+y, i, q = Colorsys.hsv2yiq(h, s, v)
 ```
 12. HSV to HLS
 ```
-h, l, s := Colorsys.hsv2hls(h, s, v)
+h, l, s = Colorsys.hsv2hls(h, s, v)
 ```
 ## Contact
 Any questions, welcome to email me at 346813862Hjj@gmail.com

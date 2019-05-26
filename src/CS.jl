@@ -17,7 +17,7 @@ HSV: Hue, Saturation, Value
 # macro
 const one_third = 1/3
 const one_sixth = 1/6
-const wo_third = 2/3
+const two_third = 2/3
 # Util Functions
 function _v(m1, m2, hue)
     hue = hue - floor(hue)
