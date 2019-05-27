@@ -2,6 +2,10 @@ using Colorsys
 using Test
 
 @testset "Colorsys.jl" begin
+    @test Colorsys._v(1,2,0.1) ≈ 1.6
+    @test Colorsys._v(1,2,0.4) == 2
+    @test Colorsys._v(1,2,0.6) ≈ 1.4
+    @test Colorsys._v(1,2,0.8) == 1
     y,i,q = rgb2yiq(120, 130, 140)
     @test y≈0.5023529411 && i≈-0.0360784313 && q≈0.0039215686
     r,g,b = yiq2rgb(0.8, 0.6, 0.4)
@@ -12,8 +16,12 @@ using Test
     @test (r,g,b) == (112,193,112)
     h,s,v = rgb2hsv(120, 130, 140)
     @test h≈210.0000000000 && s≈0.1428571428 && v≈0.5490196078
+    h,s,v = rgb2hsv(120, 120, 120)
+    @test h≈0.0 && s≈0.0 && v≈0.4705882352
     r,g,b = hsv2rgb(120, 0.6, 0.4)
     @test (r,g,b) == (40,102,40)
+    r,g,b = hsv2rgb(120, 0, 0.2)
+    @test (r,g,b) == (51,51,51)
     h,l,s = yiq2hls(0.8, 0.6, 0.4)
     @test h≈316.6037735849 && l≈0.6882352941 && s≈1.0000000000
     h,s,v = yiq2hsv(0.8, 0.6, 0.4)
