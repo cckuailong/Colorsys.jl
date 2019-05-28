@@ -122,10 +122,8 @@ function hsv2rgb(h, s, v)
         return trunc(Int,p*255), trunc(Int,q*255), trunc(Int,v*255)
     elseif i == 4
         return trunc(Int,t*255), trunc(Int,p*255), trunc(Int,v*255)
-    elseif i == 5
-        return trunc(Int,v*255), trunc(Int,p*255), trunc(Int,q*255)
     else
-        return 0, 0, 0
+        return trunc(Int,v*255), trunc(Int,p*255), trunc(Int,q*255)
     end
 end
 
@@ -158,4 +156,5 @@ function hsv2hls(h,s,v)
     r,g,b = hsv2rgb(h,s,v)
     return rgb2hls(r,g,b)
 end
-println(rgb2hsv(120, 120, 120))
+
+println(rgb2hsv(220, 130, 240))
