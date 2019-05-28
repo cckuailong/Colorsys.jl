@@ -156,5 +156,3 @@ function hsv2hls(h,s,v)
     r,g,b = hsv2rgb(h,s,v)
     return rgb2hls(r,g,b)
 end
-
-println(rgb2hsv(220, 130, 240))
